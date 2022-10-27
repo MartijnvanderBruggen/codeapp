@@ -1,0 +1,125 @@
+ERROR - 2022-10-26 15:27:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'bn_myapp'@'%' to database 'bn_myapp' in /app/myapp/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /app/myapp/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/myapp/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/myapp/system/Database/BaseConnection.php(1387): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Database/BaseConnection.php(1421): CodeIgniter\Database\BaseConnection->listTables()
+#5 /app/myapp/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /app/myapp/system/Database/MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /app/myapp/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /app/myapp/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#9 /app/myapp/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#10 /app/myapp/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#11 /app/myapp/system/CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /app/myapp/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#13 /app/myapp/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#14 /app/myapp/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /app/myapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'%' to database '****' in /app/myapp/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /app/myapp/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/myapp/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/myapp/system/Database/BaseConnection.php(1387): CodeIgniter\Database\BaseConnection->query()
+#3 /app/myapp/system/Database/BaseConnection.php(1421): CodeIgniter\Database\BaseConnection->listTables()
+#4 /app/myapp/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /app/myapp/system/Database/MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /app/myapp/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /app/myapp/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#8 /app/myapp/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#9 /app/myapp/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#10 /app/myapp/system/CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap()
+#11 /app/myapp/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#12 /app/myapp/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest()
+#13 /app/myapp/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 /app/myapp/spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2022-10-26 16:52:30 --> mysqli_sql_exception: Column 'title' cannot be null in /app/myapp/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/myapp/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/myapp/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/myapp/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/myapp/system/BaseModel.php(748): CodeIgniter\Model->doInsert()
+#6 /app/myapp/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/myapp/app/Controllers/CodeSnippets.php(31): CodeIgniter\Model->insert()
+#8 /app/myapp/system/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+#9 /app/myapp/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /app/myapp/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/myapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-26 17:28:08 --> Undefined property: App\Filters\CorsFilter::$output
+in APPPATH/Filters/CorsFilter.php on line 28.
+ 1 APPPATH/Filters/CorsFilter.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Filters/Filters.php(173): App\Filters\CorsFilter->before()
+ 3 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 17:29:23 --> mysqli_sql_exception: Column 'title' cannot be null in /app/myapp/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/myapp/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/myapp/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/myapp/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/myapp/system/BaseModel.php(748): CodeIgniter\Model->doInsert()
+#6 /app/myapp/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/myapp/app/Controllers/CodeSnippets.php(29): CodeIgniter\Model->insert()
+#8 /app/myapp/system/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+#9 /app/myapp/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /app/myapp/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/myapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-26 17:29:23 --> Column 'title' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/CodeSnippets.php(29): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-26 17:30:49 --> mysqli_sql_exception: Column 'title' cannot be null in /app/myapp/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/myapp/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/myapp/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/myapp/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/myapp/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/myapp/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/myapp/system/BaseModel.php(748): CodeIgniter\Model->doInsert()
+#6 /app/myapp/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/myapp/app/Controllers/CodeSnippets.php(29): CodeIgniter\Model->insert()
+#8 /app/myapp/system/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+#9 /app/myapp/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /app/myapp/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/myapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-26 17:30:49 --> Column 'title' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/CodeSnippets.php(29): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 18:28:30 --> Undefined variable $request
+in APPPATH/Config/Routes.php on line 39.
+ 1 APPPATH/Config/Routes.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(764): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
