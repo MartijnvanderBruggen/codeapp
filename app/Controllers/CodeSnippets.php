@@ -26,7 +26,9 @@ class CodeSnippets extends ResourceController
             'title' => $this->request->getVar('title'),
             'content'  => $this->request->getVar('content'),
         ];
-        $CodeSnippetModel->insert($data);
+        $CodeSnippetModel->title = $data['title'];
+        $CodeSnippetModel->content = $data['content'];
+        $CodeSnippetModel->save();
         //return $this->response->setStatusCode(200);
         return $this->response->setStatusCode(200)->setJSON( ['message' => 'testing'] );
         //return $this->respondCreated();
