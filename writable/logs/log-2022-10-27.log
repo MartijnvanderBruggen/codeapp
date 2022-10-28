@@ -250,3 +250,369 @@ in SYSTEMPATH/BaseModel.php on line 649.
  3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 06:58:53 --> Too few arguments to function CodeIgniter\BaseModel::save(), 0 passed in /app/myapp/app/Controllers/CodeSnippets.php on line 31 and exactly 1 expected
+in SYSTEMPATH/BaseModel.php on line 649.
+ 1 APPPATH/Controllers/CodeSnippets.php(31): CodeIgniter\BaseModel->save()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 06:59:52 --> Too few arguments to function CodeIgniter\BaseModel::save(), 0 passed in /app/myapp/app/Controllers/CodeSnippets.php on line 32 and exactly 1 expected
+in SYSTEMPATH/BaseModel.php on line 649.
+ 1 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\BaseModel->save()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:03:07 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/CodeSnippets.php(31): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:03:22 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/CodeSnippets.php(31): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:21:49 --> CodeIgniter\Validation\Rules::min_length(): Argument #1 ($str) must be of type ?string, array given, called in /app/myapp/system/Validation/Validation.php on line 315
+in SYSTEMPATH/Validation/Rules.php on line 186.
+ 1 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->min_length()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/CodeSnippets.php(25): CodeIgniter\Controller->validate()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:31:15 --> Undefined variable $validation
+in APPPATH/Controllers/CodeSnippets.php on line 24.
+ 1 APPPATH/Controllers/CodeSnippets.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:32:45 --> CodeIgniter\Validation\Rules::min_length(): Argument #1 ($str) must be of type ?string, array given, called in /app/myapp/system/Validation/Validation.php on line 315
+in SYSTEMPATH/Validation/Rules.php on line 186.
+ 1 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->min_length()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/CodeSnippets.php(27): CodeIgniter\Controller->validate()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:35:39 --> CodeIgniter\Validation\Rules::min_length(): Argument #1 ($str) must be of type ?string, array given, called in /app/myapp/system/Validation/Validation.php on line 315
+in SYSTEMPATH/Validation/Rules.php on line 186.
+ 1 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->min_length()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 APPPATH/Controllers/CodeSnippets.php(27): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:36:36 --> preg_match(): Argument #2 ($subject) must be of type string, array given
+in SYSTEMPATH/Validation/FormatRules.php on line 79.
+ 1 SYSTEMPATH/Validation/FormatRules.php(79): preg_match()
+ 2 SYSTEMPATH/Validation/Validation.php(314): CodeIgniter\Validation\FormatRules->alpha_numeric_punct()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 APPPATH/Controllers/CodeSnippets.php(27): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:37:19 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/CodeSnippets.php(36): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:37:47 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/CodeSnippets.php(36): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:47:54 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/CodeSnippets.php(43): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:49:44 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 9 APPPATH/Controllers/CodeSnippets.php(40): CodeIgniter\Model->insert()
+10 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:54:18 --> Undefined variable $data
+in APPPATH/Controllers/CodeSnippets.php on line 41.
+ 1 APPPATH/Controllers/CodeSnippets.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:56:52 --> Undefined variable $data
+in APPPATH/Controllers/CodeSnippets.php on line 41.
+ 1 APPPATH/Controllers/CodeSnippets.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:57:43 --> Undefined variable $request
+in APPPATH/Controllers/CodeSnippets.php on line 23.
+ 1 APPPATH/Controllers/CodeSnippets.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 07:58:27 --> Undefined variable $data
+in APPPATH/Controllers/CodeSnippets.php on line 42.
+ 1 APPPATH/Controllers/CodeSnippets.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:00:30 --> Cannot use object of type CodeIgniter\HTTP\IncomingRequest as array
+in APPPATH/Controllers/CodeSnippets.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:01:21 --> Call to undefined method App\Controllers\CodeSnippets::request()
+in APPPATH/Controllers/CodeSnippets.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:01:43 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$body
+in APPPATH/Controllers/CodeSnippets.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:04:38 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$body
+in APPPATH/Controllers/CodeSnippets.php on line 23.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:07:51 --> Undefined variable $data
+in APPPATH/Controllers/CodeSnippets.php on line 42.
+ 1 APPPATH/Controllers/CodeSnippets.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:22:48 --> json_decode(): Argument #1 ($json) must be of type string, CodeIgniter\HTTP\IncomingRequest given
+in APPPATH/Controllers/CodeSnippets.php on line 23.
+ 1 APPPATH/Controllers/CodeSnippets.php(23): json_decode()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:35:54 --> Undefined variable $obj
+in APPPATH/Controllers/CodeSnippets.php on line 24.
+ 1 APPPATH/Controllers/CodeSnippets.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:38:39 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, stdClass given, called in /app/myapp/app/Controllers/CodeSnippets.php on line 32
+in SYSTEMPATH/Validation/Validation.php on line 386.
+ 1 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->withRequest()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:38:58 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, stdClass given, called in /app/myapp/app/Controllers/CodeSnippets.php on line 32
+in SYSTEMPATH/Validation/Validation.php on line 386.
+ 1 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->withRequest()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:41:37 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, stdClass given, called in /app/myapp/app/Controllers/CodeSnippets.php on line 32
+in SYSTEMPATH/Validation/Validation.php on line 386.
+ 1 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->withRequest()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:46:03 -->   is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:46:59 --> CodeIgniter\Validation\Rules::max_length(): Argument #1 ($str) must be of type ?string, array given, called in /app/myapp/system/Validation/Validation.php on line 315
+in SYSTEMPATH/Validation/Rules.php on line 178.
+ 1 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->max_length()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:47:00 --> CodeIgniter\Validation\Rules::max_length(): Argument #1 ($str) must be of type ?string, array given, called in /app/myapp/system/Validation/Validation.php on line 315
+in SYSTEMPATH/Validation/Rules.php on line 178.
+ 1 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->max_length()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:48:15 --> max_length(100) is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 3 APPPATH/Controllers/CodeSnippets.php(32): CodeIgniter\Validation\Validation->run()
+ 4 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:12:46 --> Undefined property: CodeIgniter\Validation\Validation::$title
+in APPPATH/Controllers/CodeSnippets.php on line 33.
+ 1 APPPATH/Controllers/CodeSnippets.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:15:14 --> Undefined property: CodeIgniter\Validation\Validation::$body
+in APPPATH/Controllers/CodeSnippets.php on line 31.
+ 1 APPPATH/Controllers/CodeSnippets.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:15:39 --> Undefined constant "App\Controllers\body"
+in APPPATH/Controllers/CodeSnippets.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:30:22 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:30:56 --> Cannot access protected property CodeIgniter\Validation\Validation::$data
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:32:57 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$data
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 APPPATH/Controllers/CodeSnippets.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:34:55 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getValues()
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:35:14 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getValue()
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:35:25 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getValue()
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:37:13 --> Undefined property: App\Controllers\CodeSnippets::$message
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 APPPATH/Controllers/CodeSnippets.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:38:08 --> Undefined variable $message
+in APPPATH/Controllers/CodeSnippets.php on line 34.
+ 1 APPPATH/Controllers/CodeSnippets.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 10:34:21 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CodeSnippets.php on line 36.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(852): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 10:34:39 --> Illegal offset type
+in APPPATH/Controllers/CodeSnippets.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
