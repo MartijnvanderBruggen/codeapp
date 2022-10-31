@@ -22,8 +22,8 @@ class CodeSnippets extends ResourceController
     public function create()
     {       
         $rules = [
-            'title.value' => 'required',
-            'content.value' => 'required',            
+            'title' => 'required',
+            'content' => 'required',            
         ];
 
         if (! $this->validate($rules)) {
@@ -33,26 +33,28 @@ class CodeSnippets extends ResourceController
             ] );
         }
         //extract keys and values from stdclass and store in data array
-        foreach($this->request->getVar() as $key => $value){
-            //sanitize input           
-            $data[$key] = $value->value;
-        }
        
-        $Codesnippet = new CodeSnippetModel();
-        try 
-        {
-            $Codesnippet->insert($data);
-            return $this->response->setStatusCode(200)->setJSON( ['message' => 'Stored in db'] );
-        } 
-        catch(Exception $e) 
-        {
-            return $this->response->setStatusCode(500)->setJSON( ['error' => "something went wrong while trying to save to db: {$e->getMessage()}"] );
+        foreach($this->request->getVar() as $formFieldName => $formFieldValue) {
+            $data[$formFieldName] = trim($formFieldValue);
         }
+
+        //sanitize
+       
+
+        $datafilter = array(
+            'title' => array('filter' => FILTER_SANITIZE_STRING, 'flags' => !FILTER_FLAG_STRIP_LOW),    // removes tags. formatting code is encoded
+            'content' => array('filter' => FILTER_SANITIZE_STRING, 'flags' => !FILTER_FLAG_STRIP_LOW),           
+        );
+
+        $santized_data_array = filter_var_array($data, $datafilter);
+        $Codesnippet = new CodeSnippetModel();
+        $Codesnippet->insert($santized_data_array);
+        return $this->response->setStatusCode(200)->setJSON( ['message' => 'Stored in db'] );
     }
 
     public function delete($id = null) {
         $Codesnippet = new CodeSnippetModel();
         $Codesnippet->delete($id);
-
     }
 }
+

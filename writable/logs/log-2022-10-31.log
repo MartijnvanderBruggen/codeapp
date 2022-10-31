@@ -1,0 +1,36 @@
+CRITICAL - 2022-10-31 12:02:53 --> Attempt to read property "value" on string
+in APPPATH/Controllers/CodeSnippets.php on line 38.
+ 1 APPPATH/Controllers/CodeSnippets.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 12:21:00 --> Attempt to read property "value" on string
+in APPPATH/Controllers/CodeSnippets.php on line 38.
+ 1 APPPATH/Controllers/CodeSnippets.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 14:39:57 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getVars()
+in APPPATH/Controllers/CodeSnippets.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 14:45:16 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH/Controllers/CodeSnippets.php on line 36.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(852): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-31 15:06:30 --> array_filter(): Argument #2 ($callback) must be a valid callback, function "trim_value" not found or invalid function name
+in APPPATH/Controllers/CodeSnippets.php on line 42.
+ 1 APPPATH/Controllers/CodeSnippets.php(42): array_filter()
+ 2 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\CodeSnippets->create()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
